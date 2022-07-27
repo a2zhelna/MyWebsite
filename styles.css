@@ -1,0 +1,274 @@
+/* THE MASTER STYLES*/
+
+body {
+    font-family: "Alata", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* NAV STYLES!*/
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    transition: 1s;
+}
+
+.nav-wrapper:hover {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: #e2e2e2;
+    transition: 1s;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* whenever this class is hovered over, this should occur:*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    /*These next two "styles or whatever" make the underline of
+    the HOME/ABOUT pages remain while on a specific page*/
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+/* PORTFOLIO STYLES! */
+.portfolio-items-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    /* Making it so positions of "children" elements in this item-wrapper can be inside of it*/
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    /*Set width corresponding to the above set height - keeping same aspect ratio*/
+    width: 100%;
+    /*Crop images so that they fit nicely with eachother*/
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* Center items from top to bottom */
+    justify-content: center;
+    /* Center items from left to right */
+    align-items: center;
+    /* These items are going to take up the entire parent height*/
+    height: 100%;
+    text-align: center;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/*Image text transition shit... cooool */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: rgb(152, 14, 238);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(40%)
+}
+
+
+/*Rectuangle shape*/
+.black-box {
+    transition: 1s;
+    height: 200px;
+    width: 4px;
+    background: black;
+}
+
+.black-box:hover {
+    height: 200px;
+    width: 100%;
+    background: black;
+}
+
+
+
+/* About page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    /* good looking spacing */
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    /* good looking spacing */
+    color: orangered;
+}
+
+
+
+
+
+
+
+.bold{
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0.5rem 4rem;
+    font-size: 2rem;
+    /* border-bottom: 3px solid rgb(40, 39, 39); */
+    justify-content: center;
+}
+
+.header > *{
+    margin: .5rem;
+}
+
+.navig-block{
+    text-align: center;
+}
+
+.navig{
+    border-top: 3px solid rgb(40, 39, 39);
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+
+    /*weird stuff*/
+    /* align-items: center; */
+    /* margin: 0rem 22rem; */
+}
+
+.navig > *{
+    margin: 0.5rem;
+}
+
+.category {
+    align-items: flex-start;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*what is this a shit???*/
+.category a {
+    transition: 0.1s;
+    text-decoration: none;
+    /* border-bottom: 4px solid transparent; */
+    color: black;
+
+}
+
+/*Pertains to text and box surrounding it*/
+.category:hover{
+}
+
+/*Pertains to only the text*/
+.category a:hover{
+    color: orangered;
+    border-bottom: 3px solid red;
+    transition: 0.3s;
+}
+
+.active-category a{
+    /*These next two "styles or whatever" make the underline of
+    the HOME/ABOUT pages remain while on a specific page*/
+    border-bottom: 2px solid black;
+}
+
+.active-category a:hover{
+    /*These next two "styles or whatever" make the underline of
+    the HOME/ABOUT pages remain while on a specific page*/
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.category a:active{
+    color: brown;
+    border-color: brown;
+}
+
+
+.content-block{
+    text-align: center;
+}
+
+.about-section{
+    /* margin:0 4rem; */
+    display: inline-block;
+}
+.section-header{
+    font-size: 1.3rem;
+    color: #0f0d0dda;
+    /* margin: 1rem; */
+
+    text-align: left;
+}
+.section-text{
+    max-width: 50vw;
+    text-align: left;
+}
