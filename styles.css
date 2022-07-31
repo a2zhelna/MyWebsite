@@ -272,3 +272,31 @@ body {
     max-width: 50vw;
     text-align: left;
 }
+
+/* Diagram container */
+.diagram-container{
+
+}
+
+.diagram-title{
+    font-size: 0.9rem;
+    color: dimgrey;
+    padding-bottom: 1%;
+}
+
+.diagram-image img{
+    width: 100%;
+}
+
+/* Youtube Video Container */
+.ytvid-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 55%;
+    height: 0;
+}
+.ytvid-container iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
